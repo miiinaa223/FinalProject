@@ -1,0 +1,414 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10300.17.0728.2252                               -->
+<workbook original-version='10.3' source-build='10.3.2 (10300.17.0728.2252)' source-platform='win' version='10.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='FinalPJ_accuracy1' inline='true' name='federated.1oyxoba16tcuh01gj22150f8y4dt' version='10.3'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='FinalPJ_accuracy1' name='textscan.1f9ecpm0te19hl1ary78p17q9873'>
+            <connection class='textscan' directory='C:/Users/imotom/OneDrive - kochind.com/Desktop' filename='FinalPJ_accuracy1.txt' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1f9ecpm0te19hl1ary78p17q9873' name='FinalPJ_accuracy1.txt' table='[FinalPJ_accuracy1#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+            <column datatype='integer' name='Layer' ordinal='0' />
+            <column datatype='integer' name='Nodes' ordinal='1' />
+            <column datatype='real' name='Loss' ordinal='2' />
+            <column datatype='real' name='Accuracy' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Layer</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Layer]</local-name>
+            <parent-name>[FinalPJ_accuracy1.txt]</parent-name>
+            <remote-alias>Layer</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nodes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Nodes]</local-name>
+            <parent-name>[FinalPJ_accuracy1.txt]</parent-name>
+            <remote-alias>Nodes</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loss</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Loss]</local-name>
+            <parent-name>[FinalPJ_accuracy1.txt]</parent-name>
+            <remote-alias>Loss</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accuracy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Accuracy]</local-name>
+            <parent-name>[FinalPJ_accuracy1.txt]</parent-name>
+            <remote-alias>Accuracy</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[FinalPJ_accuracy1.txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.408832' measure-ordering='alphabetic' measure-percentage='0.591168' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='FinalPJ_accuracy' inline='true' name='federated.11injlo1jvrho615qurle1kvd0cc' version='10.3'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='FinalPJ_accuracy1' name='textscan.0mo9by10xpbv5y1asgp6015eodu0'>
+            <connection class='textscan' directory='C:/Users/imotom/OneDrive - kochind.com/Desktop' filename='FinalPJ_accuracy1.txt' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0mo9by10xpbv5y1asgp6015eodu0' name='FinalPJ_accuracy1.txt' table='[FinalPJ_accuracy1#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+            <column datatype='integer' name='Layer' ordinal='0' />
+            <column datatype='integer' name='Nodes' ordinal='1' />
+            <column datatype='real' name='Loss' ordinal='2' />
+            <column datatype='real' name='Accuracy' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Layer</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Layer]</local-name>
+            <parent-name>[FinalPJ_accuracy1.txt]</parent-name>
+            <remote-alias>Layer</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nodes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Nodes]</local-name>
+            <parent-name>[FinalPJ_accuracy1.txt]</parent-name>
+            <remote-alias>Nodes</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loss</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Loss]</local-name>
+            <parent-name>[FinalPJ_accuracy1.txt]</parent-name>
+            <remote-alias>Loss</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accuracy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Accuracy]</local-name>
+            <parent-name>[FinalPJ_accuracy1.txt]</parent-name>
+            <remote-alias>Accuracy</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[FinalPJ_accuracy1.txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Accuracy1' datatype='real' name='[Accuracy]' role='measure' type='quantitative' />
+      <column caption='Nodes1' datatype='integer' name='[Nodes]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.5' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Accuracy rates by nodes and layers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='FinalPJ_accuracy' name='federated.11injlo1jvrho615qurle1kvd0cc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11injlo1jvrho615qurle1kvd0cc'>
+            <column caption='Accuracy1' datatype='real' name='[Accuracy]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Layer]' role='measure' type='quantitative' />
+            <column caption='Nodes1' datatype='integer' name='[Nodes]' role='measure' type='quantitative' />
+            <column-instance column='[Accuracy]' derivation='None' name='[none:Accuracy:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Nodes]' derivation='None' name='[none:Nodes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Layer]' derivation='Sum' name='[sum:Layer:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.11injlo1jvrho615qurle1kvd0cc].[sum:Layer:qk]' palette='tableau-map-temperatur' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11injlo1jvrho615qurle1kvd0cc].[sum:Layer:qk]' />
+              <text column='[federated.11injlo1jvrho615qurle1kvd0cc].[sum:Layer:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11injlo1jvrho615qurle1kvd0cc].[none:Accuracy:qk]</rows>
+        <cols>[federated.11injlo1jvrho615qurle1kvd0cc].[none:Nodes:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.11injlo1jvrho615qurle1kvd0cc].[sum:Layer:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
