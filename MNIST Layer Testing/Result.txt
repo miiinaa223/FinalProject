@@ -1,0 +1,51 @@
+MNIST (1 - 50 Nodes)
+ - 0s - loss: 0.3527 - acc: 0.8780
+Loss: 0.3527420549631119, Accuracy: 0.878000020980835
+
+MNIST (1 - 100 Nodes)
+ - 1s - loss: 0.3333 - acc: 0.8814
+Loss: 0.33331570968627927, Accuracy: 0.8813999891281128
+
+MNIST (1 - 150 Nodes)
+ - 3s - loss: 0.3338 - acc: 0.8863
+Loss: 0.33380322409272195, Accuracy: 0.8863000273704529
+
+MNIST (1 - 200 Nodes)
+ - 2s - loss: 0.3257 - acc: 0.8901
+Loss: 0.32571785989403723, Accuracy: 0.8901000022888184
+
+
+MNIST (2 - 50 Nodes)
+ - 0s - loss: 0.3449 - acc: 0.8768
+Loss: 0.34489307379722595, Accuracy: 0.876800000667572
+
+MNIST (2 - 100 Nodes)
+ - 0s - loss: 0.3376 - acc: 0.8846
+Loss: 0.33757832837104795, Accuracy: 0.8845999836921692
+
+MNIST (2 - 150 Nodes)
+ - 2s - loss: 0.3434 - acc: 0.8864
+Loss: 0.34339902448654175, Accuracy: 0.8863999843597412
+
+MNIST (2 - 200 Nodes)
+ - 1s - loss: 0.3378 - acc: 0.8857
+Loss: 0.3377827430009842, Accuracy: 0.885699987411499
+
+
+
+
+MNIST (3 - 50 Nodes)
+ - 1s - loss: 0.3404 - acc: 0.8792
+Loss: 0.3403582550048828, Accuracy: 0.8791999816894531
+
+MNIST (3 - 100 Nodes)
+ - 1s - loss: 0.3247 - acc: 0.8869
+Loss: 0.32472583050727843, Accuracy: 0.886900007724762
+
+MNIST (3 - 150 Nodes)
+ - 1s - loss: 0.3323 - acc: 0.8870
+Loss: 0.33226411266326905, Accuracy: 0.8870000243186951
+
+MNIST (3 - 200 Nodes)
+ - 1s - loss: 0.3301 - acc: 0.8824
+Loss: 0.33011757639646533, Accuracy: 0.8823999762535095
